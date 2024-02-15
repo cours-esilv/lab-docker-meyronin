@@ -5,4 +5,4 @@ docker stop my-python-container
 docker rm my-python-container
 
 # Start a new container with the environment variable and ports open
-docker run -d -p 8989:8080 -p 8081:8081 --name my-python-container -e CURRENT_ENVIRONMENT=development lab-docker
+docker run -d -p 8989:5000 -p 8081:5000 --name my-python-container -e CURRENT_ENVIRONMENT=development lab-docker
