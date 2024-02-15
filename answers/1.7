@@ -1,0 +1,5 @@
+#I first find the id of the images i want to delete
+docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.CreatedAt}}"
+
+#since the beginning of the td i have created one image, lets delete it:
+docker rmi -f b3148490cc3b
