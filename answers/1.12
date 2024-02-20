@@ -1,0 +1,2 @@
+docker run -d -p 5000:5000 --name my-backend-container -e CURRENT_ENVIRONMENT=development martinsurdocker/lab-docker:back
+docker run -d -p 80:80 --name my-frontend-container -e WS_BACK_URL=http://localhost:5000 aimalvin/lab-docker:front
